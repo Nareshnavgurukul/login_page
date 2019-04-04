@@ -14,16 +14,14 @@ function Login() {
 		}
 	}
 
-	let strong = true;
+	let strong = false;
 	for (let str of pass){
-		if ("#$%&*#@".indexOf(str)>=0){
-			break;
-		}else{
-			strong = false;
+		if ("#$%&*#@".indexOf(str) >=0){
+			strong = true
 			break;
 		}
 	}
-	if (Name == "" || lastName == ""){
+	if (Name == "" || lastName == "" || Username == "" || Phone == "" || Email == "" || pass == "" ){
 		document.getElementById("alertmsg").innerHTML = "fill the empty part !";
 		document.getElementById("alertmsg").style.display = "block";
 	}
@@ -32,7 +30,7 @@ function Login() {
 		document.getElementById("alertmsg").style.display = "block";
 	}
 	else if(strong == false){
-		document.getElementById("alertmsg").innerHTML = "use a special character like @#$%&*"
+		document.getElementById("alertmsg").innerHTML = "use a special character like @#$%&* password"
 		document.getElementById("alertmsg").style.display = "block";
 	}
 	else{
