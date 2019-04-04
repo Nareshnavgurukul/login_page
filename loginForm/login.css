@@ -1,0 +1,69 @@
+html,body{
+		background-color:mediumslateblue;
+	}
+
+	body{
+		display: flex;
+		justify-content: center;
+	}
+	#pink{
+		display:flex;
+		justify-content:center;
+		align-items: center;
+		font-size:30px;
+		height:60px;
+		width:100%;
+		background-color:deeppink;
+
+	}
+	#pink a{
+		padding-right:15px;
+		text-decoration:none;
+		color:white;
+	}
+	#contain{
+		width:35%;
+		height:850px;
+		background-color:indigo;
+		border-radius:10px;
+	}
+
+	button{
+		font-size:30px;
+		margin-top:30px;
+		width:100%;
+		height:50px;
+		border-style:none;
+		cursor:pointer;
+		}
+
+	.grid:nth-chid(even){
+		padding:20px;
+		display:grid;
+		grid-template-columns:auto;
+		grid-gap:10px;
+	}
+	.grid{
+		margin-left:20px;
+	}
+	.grid input{
+		padding:10px;
+		font-size:20px;
+		width:80%;
+	}
+
+	#alertmsg{
+		display: none;
+		text-align: center;
+		color:red;
+	}
+	button:hover{
+		background-color:deepskyblue;
+	}
+@media only screen and (max-width:768px){
+	#contain {
+	    width: 100%;
+	    height: 850px;
+	    background-color: indigo;
+		}
+	}

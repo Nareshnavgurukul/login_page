@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login page</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript" src="login.js"></script>
+</head>
+<body>
+	<div id="contain">
+		<div id="pink"><a href="#" class="fa fa-user"></a>Login</div>
+		<form >
+			<div class="grid">
+			<h3>Fist name :</h3><input type="text" id="fistname" placeholder=" Myname">
+			<h3>Last name :</h3><input type="text" id="lastname" placeholder=" Mylastname">
+			<h3>Username :</h3><input type="text" id="username"  placeholder=" username">
+			<h3>Phone no. :</h3><input type="tel" id="phone" pattern="[0-9]{10}" placeholder=" Mobile no. ">
+			<h3>Email@ :</h3><input type="email" id="email" placeholder=" myemail@gmail.com">
+			<h3>Password :</h3><input type="password" id="password" placeholder="Password ">
+			</div>
+		</form>
+		<button id="btn" onclick="Login()">SUBMIT</button>
+		<h2 id="alertmsg">hello</h2>
+	</div>
+</body>
+</html>
